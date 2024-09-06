@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: ("paragraph") 15px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(212, 45%, 89%);
+}
+.QrCode-geral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 30px;
+    width: 500px;
+    height: 30%;
+    background-color: hsl(0, 0%, 100%);
+
+}
+.imagem-Qr img{
+    border-radius: 30px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 400px;
+    transition: .5s ease-in-out;
+}
+.principal h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.subtitulo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media (max-width:800px){
+    .QrCode-geral{
+        padding: 20px;
+        max-width: 90%;
+        height: auto;
+    }
+    .imagem-Qr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem-Qr img{
+        object-fit: cover;
+        width: 90%;
+
+    }
+}
+@media (max-width:480px){
+    .imagem-Qr img{
+        object-fit: cover;
+        width: 80%;
+        height: 60%;
+
+    }
+}
